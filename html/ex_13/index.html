@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Create User</title>
+    </head>
+  <body bgcolor="powderblue">
+      <h1>Create User</h1>
+    <hr>
+    <form>     
+    <fieldset>
+    <label for="nameid">Name:</label>
+<input type="text" name="name" id="nameid"  placeholder="name">
+  <br>
+  <br>
+Options:
+<form>
+<select name="Super Heros">
+                  
+                  <option value=" deadpool"> Deadpool</option>
+                  <option value="batman_vs_superman"> Batman v Superman</option>
+                  <option value="civil_war">Captain America: Civil War</option>
+                  <option value="doctor_strange">Doctor Strange </option>
+                  <option value="suicide_squad">Suicide Squad </option>
+                  <option value="apocalypse">X-Men: Apocalypse </option> 
+                  <option value="gotg_vol2">Guardians of the Galaxy Vol 2 </option>
+                        <option value="justice_league">Justice League </option>
+                        <option value="logan"> Logan</option> 
+                        <option value="homecoming">Spider-Man: Homecoming</option> 
+                                <option value="wonder_woman"selected="selected">Wonder Woman </option> 
+                                <option value="thor_ragnarok">Thor: Ragnarok</option>
+                                <option value="black_panther">Black Panther</option>
+                </select>
+        </form>
+      </fieldset>   
+<br> 
+ <textarea name="about" placeholder="Please let us know about your self "></textarea>
+<br>
+ <form method="post" enctype="multipart/form-data">
+ <div>
+ <label for="profile_pic">Choose file to upload</label>
+ <input type="file" id="profile_pic" name="profile_pic" accept=".jpg, .jpeg, .png">
+ </div>
+ <button>Submit</button>               
+ <p>Clear the input field when you click on the button:</p>
+<button onclick="document.getElementById('myInput').value = ''">Clear input field</button>
+<br>           
+<label> Add new user              
+<button value="create" name="create-user"> User</button>   
+</label>                                              
+</form>
+</body>
+</html>
