@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <title>Create User</title>
+</head>
+        <body bgcolor="#ff9999">
+    <h1>Create User</h1>
+    <hr>
+    <form action="create_user.html" method="get" enctype="application/x-www-form-urlencoded">
+        My Form
+            <fieldset>
+            <legend>User Form</legend>
+            <label>Name:<input type="text" name="name" pattern="^[a-zA-Z]+$" placeholder="username" title="Input only letters"  size="30" maxlength="20" />  </label>
+        
+            <label>Surname:</label>
+            <input type="text" name="surname" placeholder="surname" size="30" maxlength="20"/>   
+            </fieldset>
+            <fieldset>
+        <label>Password:</label>
+        <input type="password" name="pass" pattern="\d+" placeholder="password" title="Input only numbers"  size="30" maxlength="8" /><br>
+    
+            </fieldset>
+          <fieldset>   
+    <label><h2 style="color:darkgreen;"><strong>SuperHeros</strong></h2>
+    <h3 style="color:Blue;">Select your favourite superheros</h3>
+    <input type="radio" name="Super Heros" value="Superman" > Superman
+    <input type="radio" name="Super Heros" value="Batman" checked="checked">Batman
+    <input type="radio" name="Super Heros" value="WonderWoman" checked="checked">Wonderwoman
+    <input type="radio" name="Super Heros" value="Flash" > Flash
+    <input type="radio" name="Super Heros" value="Thor" > Thor
+    <input type="radio" name="Super Heros" value="Hulk" > Hulk
+</label>
+          </fieldset>
+          <fieldset>
+<label>
+        Select your favourite video game<br>
+        <input type="checkbox" name="video games" value="Fifa" checked="checked">Fifa
+        <input type="checkbox" name="video games" value="NHL">NHL
+        <input type="checkbox" name="video games" value="Residen Evil">Residen Evil
+        <input type="checkbox" name="video games" value="Uncharted" checked="checked">Uncharted
+           </fieldset>
+ </label>
+    
+    <!--"register_button.png" -->   
+    <label><strong>Birthday</strong><input type="date" name="birthday" /></label>        
+    <label><strong>Email<input type="email" name="email" /></strong></label>
+    <!--<label><strong>URL <input type="url" name="sitiopersonal" /></strong></label>-->
+    <label><strong>URL</strong><input id="myURL" name="myURL" type="url"placeholder="http://www.example.com"></label>
+     </form>
+
+<form action="https://www.google.ca/search" method="get" enctype="application/x-www-form-urlencoded">
+          <div>
+            <input type="search" id="mySearch" name="q">
+            <button>Search</button>
+          </div>
+    
+          <input type="hidden" name="user-id" value="2300" >
+          <input id="image" type="image" width="100" height="40" alt="Login" src="https://raw.githubusercontent.com/mdn/learning-area/master/html/forms/image-type-example/login.png">
+
+</form>
+</body>
+</html>
